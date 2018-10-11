@@ -1,0 +1,30 @@
+[
+  {
+    "patientName"   : "HARPER, LOUISE",
+    "patientId"     : "1394013",
+    "scheduledTime" : "6/22/2012 07:00:00 AM",
+    "scheduleStatus": "scheduled",
+    "Location"      : "Baseline East"
+  },
+  {
+    "patientName"   : "Chrisman, Winslow",
+    "patientId"     : "1388008",
+    "scheduledTime" : "6/22/2012 07:45:00 AM",
+    "scheduleStatus": "scheduled",
+    "Location"      : "Baseline West"
+  },
+  {
+    "patientName"   : "Key, Nelson",
+    "patientId"     : "1382007",
+    "scheduledTime" : "6/22/2012 08:45:00 AM",
+    "scheduleStatus": "scheduled",
+    "Location"      : "North Tower"
+  },
+  {
+    "patientName"   : "Fest, Isabel",
+    "patientId"     : "1394012",
+    "scheduledTime" : "6/22/2012 09:15:00 AM",
+    "scheduleStatus": "booked",
+    "Location"      : "West Wing"
+  }
+]

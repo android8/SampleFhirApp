@@ -1,0 +1,41 @@
+<div class='card'>
+  <div class='card-header'>
+    {{headingTitle}}
+    <h4>{{ClinicianName}}</h4>
+  </div>
+  <div class='card-body'>
+    <div class='row'>
+      <div class='col-md-2'><h5>Calender:</h5></div>
+      <div class='col-md-2'>
+        <input type="date" />
+      </div>
+      <div class='col-md-2'>
+        <button class='btn btn-primary'>Update </button>
+      </div>
+
+    </div>
+    <div class='table-responsive'>
+      <table class='table' *ngIf="schedules && schedules.length">
+        <thead>
+        <tr>
+          <th>Patient Name</th>
+          <th>Patient ID</th>
+          <th>Appointment Time</th>
+          <th>Status</th>
+          <th>Location</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor='let schedule of schedules'>
+          <td>{{schedule.patientName | uppercase}}</td>
+          <td>{{schedule.patientId}}</td>
+          <td>{{schedule.scheduledTime}}</td>
+          <td>{{schedule.scheduleStatus | uppercase}}</td>
+          <td>{{schedule.Location | uppercase}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

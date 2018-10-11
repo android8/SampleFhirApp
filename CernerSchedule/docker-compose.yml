@@ -1,0 +1,16 @@
+version: '2'
+#define the services for the application
+services:
+  #define the service for the Angular UI
+  node:
+    container_name: cernerscheduleapp
+    image: cernerscheduleapp
+    build:
+      #specifiy the project build context
+      context: .
+      #specifiy the Dockerfile to use
+      dockerfile: Dockerfile
+    restart: always
+    #bind host port 4200 to container port 4200
+    ports:
+       - 4200:4200
